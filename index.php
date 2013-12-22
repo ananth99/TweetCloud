@@ -55,10 +55,8 @@ $connection = new TwitterOAuth($CONSUMER_KEY,$CONSUMER_SECRET,$ACCESS_TOKEN,$ACC
 						$tweets = $connection->get($query);
 						foreach ($tweets as $tweet) {
 							foreach ($tweet as $t) {
-								
-								//<!--<div id="paginate"> -->
 								echo $t->text;
-								echo "<hr>";
+								echo "<br> <br>";
 							}
 						}
 					} ?>
